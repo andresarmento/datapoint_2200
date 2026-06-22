@@ -1,2 +1,1 @@
-Datapoint 2200 FPGA
-===================
+# Datapoint 2200 FPGA
