@@ -3,7 +3,7 @@
 //  
 //  André Sarmento Barbosa
 // ============================================================================
-`define ROM_FILE "C:/Users/andre/Downloads/PROJECTS/DATAPOINT_2200/datapoint_2200_fpga/sw/examples/00_fsm/00_fsm.hex"
+`define ROM_FILE "C:/Users/andre/Downloads/PROJECTS/DATAPOINT_2200/datapoint_2200_fpga/sw/examples/00_fsm.hex"
 
 module dp2200_rom (
     input  wire        clk,
