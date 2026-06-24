@@ -1,4 +1,4 @@
-// L instruction test — loads each register with a distinct immediate value
+// L Immediate instruction test — loads each register with a distinct immediate value
 // Encoding: opcode = 0d6 (octal), i.e. {00, dest[2:0], 110}
 
 06 AA  // LA 0xAA

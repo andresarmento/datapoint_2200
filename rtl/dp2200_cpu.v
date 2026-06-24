@@ -1,5 +1,5 @@
 // ============================================================================
-//  Datapoint 2200 (Version I) - L instruction
+//  Datapoint 2200 (Version I) - Load Immediate instruction
 //
 //  André Sarmento Barbosa - 2026
 // ============================================================================
@@ -86,7 +86,7 @@ module dp2200_cpu (
                 end
 
                 S_EXEC: begin
-                    if (is_type2 && mod2nd == 3'b110)   // L (load immediate)
+                    if (is_type2 && mod2nd == 3'b110)   // LImm (load immediate)
                         reg_file[mod1st] <= OPR;
                     state <= S_WAIT_OPCODE;
                     mem_addr <= P;
