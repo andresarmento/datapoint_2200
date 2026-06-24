@@ -1,0 +1,10 @@
+// L instruction test — loads each register with a distinct immediate value
+// Encoding: opcode = 0d6 (octal), i.e. {00, dest[2:0], 110}
+
+06 AA  // LA 0xAA
+0E BB  // LB 0xBB
+16 CC  // LC 0xCC
+1E DD  // LD 0xDD
+26 EE  // LE 0xEE
+2E 11  // LH 0x11
+36 22  // LL 0x22
