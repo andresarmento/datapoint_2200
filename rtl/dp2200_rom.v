@@ -3,7 +3,7 @@
 //  
 //  André Sarmento Barbosa
 // ============================================================================
-`define ROM_FILE "C:/Users/andre/Downloads/PROJECTS/DATAPOINT_2200/datapoint_2200_fpga/sw/examples/001_LImm.hex"
+`define ROM_FILE "C:/Users/andre/Downloads/PROJECTS/DATAPOINT_2200/datapoint_2200_fpga/sw/examples/"
 
 module dp2200_rom (
     input  wire        clk,
@@ -13,7 +13,7 @@ module dp2200_rom (
 
     reg [7:0] rom [0:8191];
 
-    initial $readmemh(`ROM_FILE, rom);
+    initial $readmemh({`ROM_FILE, "002_LOAD.hex"}, rom);
 
     always @(posedge clk) begin
         rdata <= rom[addr];

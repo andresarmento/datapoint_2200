@@ -1,0 +1,9 @@
+// LOAD instruction test — register-to-register copies
+// Encoding: opcode = {11, dst[2:0], src[2:0]}
+// Registers: A=0 B=1 C=2 D=3 E=4 H=5 L=6
+
+0E BB  // LB  0xBB   (B=0xBB)
+16 CC  // LC  0xCC   (C=0xCC)
+06 AA  // LA  0xAA   (A=0xAA)
+C1     // LA  B      (A=0xBB)
+C2     // LA  C      (A=0xCC)
